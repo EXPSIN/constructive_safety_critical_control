@@ -15,17 +15,13 @@ The script follows a systematic procedure for selecting controller parameters, i
 ﻿
 The script executes the following steps:
 ﻿
-1. **Verify Assumptions**  
-The script verifies the necessary assumptions regarding system dynamics and other constants.
+1. The script verifies the necessary assumptions regarding system dynamics and other constants.
 ﻿
-2. **Design Controller**  
-It then designs the controller by selecting appropriate parameters to ensure that the system behaves as desired.
+2. It then designs the controller by selecting appropriate parameters to ensure that the system behaves as desired.
 ﻿
-3. **Assign Gain Parameters**  
-The script assigns necessary gain parameters to satisfy the system's small-gain conditions for stability.
+3. The script assigns necessary gain parameters to satisfy the system's small-gain conditions for stability.
 ﻿
-4. **Design Recursive Controller**  
-Based on the parameters selected, it recursively designs the controller for each subsystem to meet tracking and stability requirements.
+4. Based on the parameters selected, it recursively designs the controller for each subsystem to meet tracking and stability requirements.
 ﻿
 ## Usage
 ﻿
