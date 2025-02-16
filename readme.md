@@ -33,7 +33,7 @@ Once the necessary parameters are defined, simply run the script in MATLAB. It w
 
 # 2. Positive Basis Generation
 
-By running the main file in the folder `generate_positive_basis`, you can generate the desired positive basis vectors. These vectors are an essential part of the controller design process and are used to ensure that the system meets specific theoretical properties.
+By running the main file in the folder `generate_positive_basis`, we can generate the desired positive basis vectors.
 
 ## Usage
 - Navigate to the `generate_positive_basis` folder.
