@@ -1,11 +1,7 @@
-%{
-    This scrp
-%} 
-% Clear environment
 close all; clear all; clc;
 
 %%-------------------------------------------------------------------------
-%% Step 1: Assumptions 1 and 2
+%% Assumptions 1 and 2
 % Define symbolic variables and set assumptions
 syms m; 
 assume(m, {'positive', 'integer'});  % Assume m is a positive integer
@@ -33,7 +29,7 @@ end
 % f_bar_x2(s) = s^2;
 
 %%-------------------------------------------------------------------------
-%% Step 2: Design Controller (Proposition 2)
+%% Design Controller (Proposition 2)
 % Given parameters for gamma_1_2
 syms gamma_1_2(s);
 k_gamma_12   = 4.0;             % [User-Defined] Define gain k_gamma_12
@@ -47,13 +43,13 @@ gamma_x2r_V(s) = 1/4 * s;           % [User-Defined] Set gamma_x2r_V as a functi
 k_1 = 3.49;                         % [User-Defined] Set the value of k_1
 
 %%-------------------------------------------------------------------------
-%% Step 3: Assign Gain Parameters (Theorem 3)
+%% Assign Gain Parameters (Theorem 3)
 % Define controller gain parameters
-k_gamma_ij = 1/1.001;               % [User-Defined] Define small gain factor for inter-controller coupling
-k_gamma_i1 = 1/k_gamma_12/1.001;    % [User-Defined] Define the inverse gain for the first controller
+k_gamma_i1 = 1/4.001;               % [User-Defined] Define small gain factor for inter-controller coupling
+k_gamma_ij = 1/4.001;               % [User-Defined] Define the inverse gain for the first controller
 
 %%-------------------------------------------------------------------------
-%% Step 4: Design Controller (Proposition 3)
+%% Design Controller (Proposition 3)
 syms theta;
 assume(theta, {'positive', 'real'});    % Assume theta is positive and real
 theta = 1e-3;                           % [User-Defined] Set the value of theta
