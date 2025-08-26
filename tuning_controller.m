@@ -42,13 +42,12 @@ k_1 = 3.49;                         % [User-Defined]
 
 %%-------------------------------------------------------------------------
 %% Design Controller (74)
-k_gamma_i  = 1/4.001;                % [User-Defined] Define gains factor for inter-controller coupling
+k_gamma_i  = 0.249;                 % [User-Defined] Define gains factor for inter-controller coupling
 k_gamma_i1 = k_gamma_i;               
 k_gamma_ij = k_gamma_i;             
 syms theta;
 assume(theta, {'positive', 'real'}); 
 sigma(s) = 1e-3*s;                   % [User-Defined]
-
 
 for i = 2:m
     fprintf('Calculating the %d-th gains.\n', i);       % Display the current controller number being calculated
